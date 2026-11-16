@@ -1,6 +1,6 @@
 # @kabaevroman/pi-code-session-ui
 
-Independently installable pi extension: session-ui. Former package name: `pi-claude-session-ui`.
+Independently installable pi extension: session-ui.
 
 This extension depends on `@kabaevroman/pi-code-core@0.5.0`; it does not require any other extension.
 
