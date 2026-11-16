@@ -1,8 +1,8 @@
-import type { Runtime } from '../runtime/runtime.ts';
-import { modes } from '../runtime/config.ts';
-import { capabilityReport } from '../runtime/capabilities.ts';
+import type { Runtime } from 'pi-code-core/runtime/runtime';
+import { modes } from 'pi-code-core/runtime/config';
+import { capabilityReport } from 'pi-code-core/runtime/capabilities';
 import { discoverResources } from './resources.ts';
-import { rewindFile } from './checkpoints.ts';
+import { rewindFile } from 'pi-code-core/extensions/checkpoints';
 export function registerSessionUI(runtime: Runtime): void {
   runtime.pi.registerCommand('compat', { description: 'Compatibility diagnostics: prompts, permissions, memory, tasks, resources, capabilities, rewind', handler: async (args, ctx) => {
     const [command = 'diagnostics', value] = args.trim().split(/\s+/);
